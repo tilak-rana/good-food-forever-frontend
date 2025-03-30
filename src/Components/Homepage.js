@@ -16,13 +16,13 @@ const Home = () => {
       try {
         const [locationRes, mealtypeRes] = await axios.all([
           axios.get(
-            "https://good-food-forever-backend-2.onrender.com/location",
+            "https://good-food-forever-backend-4.onrender.com/location",
             {
               headers: { "Content-Type": "application/JSON" },
             }
           ),
           axios.get(
-            "https://good-food-forever-backend-2.onrender.com/mealtype",
+            "https://good-food-forever-backend-4.onrender.com/mealtype",
             {
               headers: { "Content-Type": "application/JSON" },
             }

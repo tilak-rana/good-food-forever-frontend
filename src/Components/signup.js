@@ -20,7 +20,7 @@ const SignupPage = ({ navigate }) => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://good-food-forever-backend-2.onrender.com/signup",
+        "https://good-food-forever-backend-4.onrender.com/signup",
         {
           method: "POST",
           headers: {

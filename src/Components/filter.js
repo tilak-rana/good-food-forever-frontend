@@ -15,12 +15,12 @@ const Filter = ({ navigate }) => {
   useEffect(() => {
     // Fetch locations and restaurants data
     axios
-      .get("https://good-food-forever-backend-2.onrender.com/location")
+      .get("https://good-food-forever-backend-4.onrender.com/location")
       .then((res) => setLocations(res.data.loc))
       .catch((err) => console.log(err));
 
     axios
-      .post("https://good-food-forever-backend-2.onrender.com/filter")
+      .post("https://good-food-forever-backend-4.onrender.com/filter")
       .then((res) => setRestaurants(res.data.restaurants))
       .catch((err) => console.log(err));
   }, []);
@@ -45,7 +45,7 @@ const Filter = ({ navigate }) => {
   const filterRestaurants = (filterobj) => {
     axios
       .post(
-        "https://good-food-forever-backend-2.onrender.com/filter",
+        "https://good-food-forever-backend-4.onrender.com/filter",
         filterobj
       )
       .then((res) => setRestaurants(res.data.restaurants))

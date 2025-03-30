@@ -19,7 +19,7 @@ const LoginPage = ({ navigate }) => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://good-food-forever-backend-2.onrender.com/login",
+        "https://good-food-forever-backend-4.onrender.com/login",
         {
           method: "POST",
           headers: {
