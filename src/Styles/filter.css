@@ -1,0 +1,164 @@
+#logo {
+    margin-left: 150px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #dc3545;
+    text-decoration: none;
+}
+/* General Styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#RESTAURANT .card {
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#RESTAURANT .card img {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#RESTAURANT .card-body {
+    padding: 15px;
+}
+
+#RESTAURANT .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#RESTAURANT .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+#RESTAURANT hr {
+    margin: 15px 0;
+    border: 0.5px solid #e2e2e2;
+}
+
+#RESTAURANT .d-flex {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #RESTAURANT .card img {
+        margin: auto;
+        width: 80%;
+        height: auto;
+    }
+
+    #RESTAURANT .card-body {
+        padding: 10px;
+        margin-left: 30px;
+    }
+
+    #RESTAURANT .card-title {
+        font-size: 1rem;
+        
+    }
+
+    #RESTAURANT .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #RESTAURANT .d-flex p {
+        margin-bottom: 5px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Larger Screens */
+@media (min-width: 992px) {
+    #RESTAURANT .card img {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+    #RESTAURANT .card-title {
+        font-size: 1.4rem;
+    }
+
+    #RESTAURANT .d-flex {
+        justify-content: space-between;
+    }
+}
+
+/* Pagination Buttons */
+.text-center button {
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+}
+
+/* Adjustments for mobile views */
+@media (max-width: 768px) {
+    #navbar .btn {
+        font-size: 0.8rem;
+    }
+    #RESTAURANT .card img {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+    #filter-btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .card-footer {
+        text-align: center;
+    }
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#filter-btn {
+    display: none;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+    color: #192F60;
+}
+
+@media (max-width: 576px) {
+    #RESTAURANT .card img {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+}

@@ -1,0 +1,52 @@
+/* src/components/RestaurantInfo.css */
+
+.restaurant-info {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    background-color: #f8f9fa;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .nav-tabs {
+    margin-bottom: 1rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .phone-number, .address {
+    margin-bottom: 1rem;
+  }
+  
+  .order-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .order-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 767.98px) {
+    .nav-link {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  }
+  /* menuItem.css */
+
