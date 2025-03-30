@@ -45,7 +45,9 @@ const Details = () => {
     const { restaurant } = qs;
 
     axios
-      .get(`http://0.0.0.0:5500/restaurants/${restaurant}`)
+      .get(
+        `https://good-food-forever-backend-2.onrender.com/restaurants/${restaurant}`
+      )
       .then((res) => {
         setRestaurants(res.data.restaurant);
         setResId(restaurant);
@@ -56,7 +58,7 @@ const Details = () => {
   const handleModal = (state, value) => {
     if (state === "menuModal" && value === true) {
       axios
-        .get(`http://0.0.0.0:5500/menu/${resId}`)
+        .get(`https://good-food-forever-backend-2.onrender.com/menu/${resId}`)
         .then((res) => {
           const items = res.data.menuitems
             ? res.data.menuitems.map((item) => ({
@@ -124,7 +126,7 @@ const Details = () => {
     };
 
     axios
-      .post("http://0.0.0.0:5500/orders", {
+      .post("https://good-food-forever-backend-2.onrender.com/orders", {
         ...formData,
         resId,
         subtotal,

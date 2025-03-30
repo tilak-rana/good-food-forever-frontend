@@ -15,12 +15,18 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const [locationRes, mealtypeRes] = await axios.all([
-          axios.get("http://0.0.0.0:5500/location", {
-            headers: { "Content-Type": "application/JSON" },
-          }),
-          axios.get("http://0.0.0.0:5500/mealtype", {
-            headers: { "Content-Type": "application/JSON" },
-          }),
+          axios.get(
+            "https://good-food-forever-backend-2.onrender.com/location",
+            {
+              headers: { "Content-Type": "application/JSON" },
+            }
+          ),
+          axios.get(
+            "https://good-food-forever-backend-2.onrender.com/mealtype",
+            {
+              headers: { "Content-Type": "application/JSON" },
+            }
+          ),
         ]);
 
         setLocation(locationRes.data.loc);

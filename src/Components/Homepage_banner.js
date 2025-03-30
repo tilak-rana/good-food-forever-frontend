@@ -33,7 +33,9 @@ const Banner = ({ locationData, navigate }) => {
     // console.log(locationId);
     sessionStorage.setItem("locationId", locationId);
     axios
-      .get(`http://0.0.0.0:5500/restaurant/${locationId}`)
+      .get(
+        `https://good-food-forever-backend-2.onrender.com/restaurant/${locationId}`
+      )
       .then((res) => setRestaurant(res.data.restaurants))
       .catch((err) => console.log(err));
   };
@@ -90,7 +92,7 @@ const Banner = ({ locationData, navigate }) => {
 
       try {
         const response = await axios.post(
-          "http://0.0.0.0:5500/uploadProfilePic",
+          "https://good-food-forever-backend-2.onrender.com/uploadProfilePic",
           formData,
           {
             headers: {
